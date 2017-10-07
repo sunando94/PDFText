@@ -4,14 +4,14 @@ PDFText is a javascript libary which makes PDF to text conversion a breeze.
 Its just import and use.
 
 
-##Getting started
+<h2>Getting started</h3>
 
 
 To get PDFText.js 
 you can clone the project or directly download the javascipt file from the lib folder.
 
-###Usage
-######HTML markup(index.html)
+<h3>Usage</h3>
+<h6>HTML markup(index.html)</h6>
 
 ```html
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ these two scripts must be included first.
 ```
 
 
-#####JavaScript(app.js)
+<h6>JavaScript(app.js)</h6>
 you just have to create an object of PDFText class and call the get function passing the file url and the callback function.
 ```js
 var pdfText = new PDFText();
