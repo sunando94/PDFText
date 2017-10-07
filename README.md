@@ -13,7 +13,7 @@ you can clone the project or directly download the javascipt file from the lib f
 ###Usage
 ######HTML markup(index.html)
 
-```
+```html
 <!DOCTYPE html>
       <html lang="en">
       <head>
