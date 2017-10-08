@@ -18,10 +18,17 @@ function upload() {
 		var tmppath = URL.createObjectURL(file);
 
 		var pdfText = new PDFText();
+		pdfText.getByteArray(file,function (rawData) {
+
+        var Data = rawData;
+			new PDFText().getPDF(Data);
+
+
+		});
 		pdfText.get(tmppath, function (text) {
 			document.getElementById('content').innerHTML = '<p style="color: #616161">' + text + '</p>';
 			console.log('success');
-			console.log(text);
+			//console.log(text);
 			$('.progressbar').animate({opacity:0},2000,function () {
 				$('.progressbar').css("display","none");
 				$( "#contentpanel" ).animate({opacity:1}, 2000);
