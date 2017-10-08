@@ -20,9 +20,14 @@ function upload() {
 		var pdfText = new PDFText();
 		pdfText.getByteArray(file,function (rawData) {
 
-        var Data = rawData;
-			new PDFText().getPDF(Data);
+           // // var PDFText=new PDFText();
+			// pdfText.ab2Str(rawData,function (data) {
+			// 	//console.log(data);
+           //
+			// });
 
+
+		pdfText.getPDF(rawData,'test_no.pdf');
 
 		});
 		pdfText.get(tmppath, function (text) {
