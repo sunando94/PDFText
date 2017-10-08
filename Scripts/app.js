@@ -4,7 +4,7 @@
 /*app.js*/
 
 function upload() {
-	$( "#contentpanel" ).animate({opacity:0}, 1000);
+	$( "#contentpanel" ).css("opacity","0");
 	$('.progressbar').css("display","block");
 	$('.progressbar').animate({opacity:1},2000
 
